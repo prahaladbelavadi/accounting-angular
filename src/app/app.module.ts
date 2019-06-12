@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
-import { MatToolbarModule, MatIconModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatButtonModule } from '@angular/material';
 
 import {
   SocialLoginModule,
@@ -23,10 +23,28 @@ export function getAuthServiceConfigs() {
     [
       {
         id: GoogleLoginProvider.PROVIDER_ID,
-        provider: new GoogleLoginProvider('496119684571-qnrp0d0tnqipu27j0f7vhi7pkcpv99a6.apps.googleusercontent.com')
+        provider: new GoogleLoginProvider('496119684571-gfb9gmpm4ja5bj7gglfjbsu8650d4jkr.apps.googleusercontent.com')
       }
     ]
   )
+  return config;
+}
+
+
+// Configs
+export function getAuthServiceConfigs() {
+  let config = new AuthServiceConfig(
+      [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+	      provider: new FacebookLoginProvider("Your-Facebook-app-id")
+        },
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+	      provider: new GoogleLoginProvider("Your-Google-Client-Id")
+        }
+      ];
+  );
   return config;
 }
 
@@ -44,7 +62,8 @@ export function getAuthServiceConfigs() {
     SocialLoginModule,
     MatToolbarModule,
     MatIconModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [{
     provide:  AuthServiceConfig,

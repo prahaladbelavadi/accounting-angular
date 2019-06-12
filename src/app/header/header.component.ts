@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   public socialSignIn(socialPlatform: string) {
     let socialPlatformProvider;
-    if (socialPlatform == "google") {
+    if (socialPlatform === 'google') {
       socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
     }
 
@@ -27,7 +27,8 @@ export class HeaderComponent implements OnInit {
 
       }
     );
-  }
+    }
+
 
   ngOnInit() {
   }
