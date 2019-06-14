@@ -1,27 +1,39 @@
 # Accounting
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This is meant to keep track of the following:
+- Attendance
+- Number of hours worked
+- Amount of money each person is due to be paid
+- Check list of tasks to be assigned for a particular day of the calendar day
+- A todo list to check if tasks were completed for the particular day.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The codebase has the following features:
+- Provides tabulated record of how many hours each one has worked and how much each person is due to be paid.
+- Provides a record of disimbursement of cash for people worked
+- Provides an accountability of tasks done, scheduled and yet to be done if pre determined.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The front end structure is as follows:
+- Componenents:
+  - Dashboard component
+- Services
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The current version has deummy data in a sorted table at `/dashboard` route. 
+It is yet to feature totaling features and forms being able to input data.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+There exists no code for unit tests. I'll add once I learn how or if it becomes necessary later.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+No. Nada. Zilch
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This repo uses material design
