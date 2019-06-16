@@ -12,12 +12,15 @@ import {
   MatToolbarModule,
   MatIconModule, MatMenuModule,
   MatTableModule,
-  MatSortModule
+  MatSortModule,
+  MatTabsModule,
+  MatCardModule
 } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WorkforceComponent } from './workforce/workforce.component';
+import { WorkforceAttendanceComponent } from './workforce/workforce-attendance/workforce-attendance.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { WorkforceComponent } from './workforce/workforce.component';
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    WorkforceComponent
+    WorkforceComponent,
+    WorkforceAttendanceComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import { WorkforceComponent } from './workforce/workforce.component';
     MatIconModule,
     MatMenuModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatTabsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
