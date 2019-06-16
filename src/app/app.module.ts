@@ -17,13 +17,15 @@ import {
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WorkforceComponent } from './workforce/workforce.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    WorkforceComponent
   ],
   imports: [
     BrowserModule,
